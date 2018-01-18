@@ -45,6 +45,15 @@ Workflow:
 4. return pixel values.
 
 ### 1.2 Fast Hartley Transform
+
+The FHT or Fast Hartley transform is based on the Hartley transform wich has been created in 1942 by the american researcher in electronics Ralph Vinton Lyon Hartley. 
+The Hartley transform is similar to the Fourier Transform but uses real numbers as input to return real numbers as output contrary to the Fourier Transform which uses complex numbers.
+It transforms those numbers from the time domain to frequency domain.
+As those two transforms are very close, we can say mathematicly that the Hartley transform is equal to real part of the Fourier Transform of the same sequence minus its imaginary part. http://sep.stanford.edu/data/media/public/oldreports/sep38/38_29.pdf
+The Fast Hartley Transform computes the Discrete Hartley Transform of a sequence. The discrete Hartley Transform (DHT) is the discrete transform related to the continuous Hartley Transform.
+This algorithm has been proposed by Ronald N Bracewell in 1984. Just as the Fast FOurier Transform, the Fast Hartley transform improves its discrete algorithm by reduces the number of its operation from O2 to O(NlogN).
+We can consider the Fast Hartley Transform as an alternative to the Fast Fourier Transform and we can notice that this alternative is not significantly faster. Indeed, it requires a comparable number of steps and complexity. The only advantage of FHT is that the inverse transform is the same as forward transform because it saves memory. (http://www.dtic.mil/dtic/tr/fulltext/u2/a212493.pdf) 
+
 ### 1.3 Fast Fourier Transform (Numerical recipe)
 
 
